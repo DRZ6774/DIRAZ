@@ -1,5 +1,7 @@
 package REPLİT;
 
+import java.util.Scanner;
+
 public class R23_İF_SWCH_TNARY_SMETHODS_6 {
     /*
 Kullanıcıdan bir isim yazmasını isteyin, adın uzunluğu 3 olmalıdır. Ardından, adın aynı karakterlere sahip olup olmadığını kontrol edin.
@@ -17,5 +19,18 @@ Ternary kullanin.
 
     public static void main(String[] args) {
 
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Lütfen isim giriniz");
+        String isim = scan.nextLine();
+        String ad = "ali";
+
+        if (isim.contains(ad)) {
+
+            System.out.println("isim ayni karakterlere sahiptir.");
+
+        } else {
+            System.out.println("Dizenin benzersiz karakterleri var");
+
+        }
     }
 }

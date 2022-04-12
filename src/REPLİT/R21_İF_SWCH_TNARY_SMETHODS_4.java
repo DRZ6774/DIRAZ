@@ -21,6 +21,23 @@ başka herhangi bir yanıt değeri için,
      */
 
     public static void main(String[] args) {
+        char test='c';
 
+
+        switch (test) {
+            case 'a' :
+                System.out.println("Talebiniz işleniyor");
+                break;
+            case 'b':
+                System.out.println("yine de ilgilendiğiniz için teşekkür ederiz");
+                break;
+            case 'c':
+                System.out.println("Üzgünüz, şu anda herhangi bir yardım yok");
+                break;
+            default:
+                System.out.println("Geçersiz giriş, lütfen tekrar deneyin!");
+        }
+        return;
     }
+
 }

@@ -14,14 +14,21 @@ Output: a s
     public static void main(String[] args) {
 
         String str = "Javaisalsoeasy";
-        char harf1 = 'a';
-        char harf2 = 's';
+        String sonuc="";
 
-        for (int i = 0; i < str.length(); i++) {
-            if (harf1 == str.charAt(i)) {
+        for (int i = 1; i <str.length(); i++) {
+            for (int j = i+1; j <str.length(); j++){
 
+                if (str.substring(i-1,i).equals(str.substring(j-1,j))){
+                    if (!sonuc.contains(str.substring(i-1,i))){
+                        sonuc+=str.substring(i-1,i);
+                    }
+
+                }
             }
-            System.out.println(harf1);
+
         }
+        System.out.println(sonuc);
+
     }
 }

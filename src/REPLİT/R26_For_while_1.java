@@ -16,5 +16,17 @@ Number of a = 2
 
     public static void main(String[] args) {
 
+            String metin = "John came late";
+            char karakter = 'a';
+            int tane = 0;
+
+            for(int i = 0; i < metin.length(); i++) {
+                if(karakter == metin.charAt(i)) {
+                    ++tane;
+                }
+            }
+
+            System.out.println( karakter + " yazı içinde  " + tane +" tanedir");
+        }
     }
-}
+
